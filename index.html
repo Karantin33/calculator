@@ -1,0 +1,42 @@
+<html> 
+<head> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=WIN1252">
+<title>Бинарный калькулятор</title> 
+<style type= "text/css"> 
+ 
+ 
+</style>
+</head>
+<script type= "text/javascript" language="JavaScript">
+       
+ function Sum() 
+{
+  var a = 5;
+  var b = 3;
+  var result = a + b;
+  var elem=document.getElementById("answer");
+  elem.innerText=result;
+  document.getElementById("demo").innerHTML=result;
+  console.log( elem);
+  console.log( result);
+  // alert(result)
+}
+
+
+</script>
+<body> 
+<h2>Первая программа!</h2> 
+Первая программа на моей первой web-странице
+<br><br><br>
+<form>
+Слагаемое 1: <input type="text" id="miltiply1" value="5"><br>
+Слагаемое 2: <input type="text" id="miltiply2" value="6"><br>
+</form>
+<input type="submit" value="Сумма" onclick="Sum()">
+<br><br>
+<button onclick="Sum()">Try it</button>
+<br><br><br>
+Ответ: <input type="text" id="answer"><br>
+<p id="demo"></p>
+</body>
+</html>
